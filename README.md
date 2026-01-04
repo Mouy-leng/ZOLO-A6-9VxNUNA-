@@ -113,6 +113,29 @@ This will set up:
 .\start-trading-system.ps1
 ```
 
+### 5. Configure Jules API Keys (Optional)
+
+Set up secure storage of Jules API keys as GitHub secrets:
+
+```cmd
+# Windows - Double-click or run:
+SETUP-JULES-API-KEYS.bat
+```
+
+```bash
+# Linux/macOS:
+./setup-jules-api-keys.sh
+```
+
+**📖 See**: [Jules API Keys Quick Reference](JULES-API-KEYS-QUICK-REFERENCE.md) | [Full Setup Guide](JULES-API-KEYS-SETUP.md)
+
+This will:
+- ✅ Store 12 Jules API keys as GitHub repository secrets
+- ✅ Create individual secrets: `JULES_API_KEY_1` through `JULES_API_KEY_12`
+- ✅ Create combined secret: `JULES_API_KEYS_ALL`
+- ✅ Generate usage documentation
+- ✅ Provide Python manager for programmatic access
+
 ### VPS 24/7 Trading System
 
 Start the complete 24/7 automated trading system:
@@ -185,6 +208,8 @@ Automated tools for managing Git branches and pull requests:
 - ✅ Comprehensive security checks
 - ✅ Token security validation
 - ✅ Script integrity verification
+- ✅ Jules API key management with GitHub Secrets
+- ✅ Secure credential storage
 
 ### VPS 24/7 Trading System
 - ✅ Exness MT5 Terminal (24/7 operation)

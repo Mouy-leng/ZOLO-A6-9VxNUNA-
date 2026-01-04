@@ -79,7 +79,28 @@ git clone https://github.com/Mouy-leng/ZOLO-A6-9VxNUNA-.git
 cd ZOLO-A6-9VxNUNA-
 ```
 
-### 2. Run the Setup
+### 2. Run Full Setup (Recommended)
+
+Run the complete system setup for one-time configuration:
+
+```powershell
+# Run as Administrator
+.\full-setup.ps1
+```
+
+Or double-click: **`RUN-FULL-SETUP.bat`**
+
+This will set up everything:
+- ✅ Complete device setup (Windows configuration)
+- ✅ Workspace structure
+- ✅ Windows auto-configuration
+- ✅ Cloud sync services (OneDrive, Google Drive, Dropbox)
+- ✅ Git repositories
+- ✅ Security settings
+- ✅ EXNESS trading system (MetaTrader 5 & EAs)
+- ✅ VPS services (optional)
+
+### 2b. Alternative: Individual Component Setup
 
 Run the master launch script to begin the setup on any platform:
 
@@ -244,19 +265,27 @@ Sensitive files including credentials, API keys, certificates, and logs are auto
 
 ## 📚 Documentation
 
+### Setup & Configuration
+- **[FULL-SETUP-GUIDE.md](FULL-SETUP-GUIDE.md)** - ⭐ Complete full setup guide (START HERE)
+- **[MANUAL-SETUP-GUIDE.md](MANUAL-SETUP-GUIDE.md)** - Manual setup instructions
+- **[VPS-SETUP-GUIDE.md](VPS-SETUP-GUIDE.md)** - VPS 24/7 trading system guide
+- **[WORKSPACE-SETUP.md](WORKSPACE-SETUP.md)** - Workspace setup guide
+
+### System & Architecture
 - [Device Skeleton](docs/device-skeleton.html) - Complete device structure
 - [Project Blueprints](docs/project-blueprints.html) - Architecture details
+- **[DEVICE-SKELETON.md](DEVICE-SKELETON.md)** - Complete device structure blueprint
+- **[PROJECT-BLUEPRINTS.md](PROJECT-BLUEPRINTS.md)** - Detailed project blueprints
+- **[SYSTEM-INFO.md](SYSTEM-INFO.md)** - System specifications
+
+### Automation & Integration
 - [Automation Rules](docs/automation-rules.html) - Automation patterns
-- [Security Guide](docs/security.html) - Security configurations
 - [MT5 Integration](docs/mt5-integration.html) - Trading setup
-- **DEVICE-SKELETON.md** - Complete device structure blueprint
-- **PROJECT-BLUEPRINTS.md** - Detailed project blueprints
-- **SYSTEM-INFO.md** - System specifications
-- **WORKSPACE-SETUP.md** - Workspace setup guide
-- **VPS-SETUP-GUIDE.md** - VPS 24/7 trading system guide
-- **AUTOMATION-RULES.md** - Automation patterns
-- **GITHUB-DESKTOP-RULES.md** - GitHub Desktop integration
-- **MANUAL-SETUP-GUIDE.md** - Manual setup instructions
+- **[AUTOMATION-RULES.md](AUTOMATION-RULES.md)** - Automation patterns
+- **[GITHUB-DESKTOP-RULES.md](GITHUB-DESKTOP-RULES.md)** - GitHub Desktop integration
+
+### Security
+- [Security Guide](docs/security.html) - Security configurations
 
 ## 🏢 Organization
 

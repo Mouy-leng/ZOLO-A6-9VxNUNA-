@@ -1079,3 +1079,8 @@ section {
     transform: translateY(0) !important;
 }
 
+/* Animation utility */
+.animate-in {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}

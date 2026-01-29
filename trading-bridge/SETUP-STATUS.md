@@ -43,7 +43,7 @@ C:\Users\USER\OneDrive\trading-bridge\
 
 ### MT5 Expert Advisor
 ```
-C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\53785E099C927DB68A545C249CDBCE06\MQL5\
+C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\59B5EF658331A93A0C9B2C215C575F68\MQL5\
 ├── Experts\PythonBridgeEA.mq5 ✅
 └── Include\PythonBridge.mqh ✅
 ```

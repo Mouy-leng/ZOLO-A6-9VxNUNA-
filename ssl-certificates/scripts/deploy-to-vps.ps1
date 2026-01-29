@@ -1,5 +1,5 @@
 # Deploy SSL Certificate to MQL5 VPS
-# Automated deployment script for VPS Jakarta 01 (ID: 675930)
+# Automated deployment script for VPS Jakarta 01 (ID: 6773048)
 
 <#
 .SYNOPSIS
@@ -7,21 +7,21 @@
 
 .DESCRIPTION
     Automates the deployment of SSL certificates and web hosting configuration
-    to MQL5 VPS Jakarta 01 (ID: 675930)
+    to MQL5 VPS Jakarta 01 (ID: 6773048)
 
 .PARAMETER VpsId
-    MQL5 VPS subscription ID (default: 675930)
+    MQL5 VPS subscription ID (default: 6773048)
 
 .PARAMETER WebServer
     Web server to use: "IIS" or "Nginx" (default: IIS)
 
 .EXAMPLE
-    .\deploy-to-vps.ps1 -VpsId 675930
+    .\deploy-to-vps.ps1 -VpsId 6773048
 #>
 
 param(
     [Parameter(Mandatory=$false)]
-    [string]$VpsId = "675930",
+    [string]$VpsId = "6773048",
     
     [Parameter(Mandatory=$false)]
     [ValidateSet("IIS", "Nginx")]

@@ -1,12 +1,12 @@
 # SSL Certificate Quick Reference
 
-Fast reference guide for SSL certificate setup on MQL5 VPS Jakarta 01 (ID: 675930).
+Fast reference guide for SSL certificate setup on MQL5 VPS Jakarta 01 (ID: 6773048).
 
 ## Certificate Details
 
 | Item | Value |
 |------|-------|
-| **VPS ID** | 675930 |
+| **VPS ID** | 6773048 |
 | **Location** | MQL5 VPS Jakarta 01 |
 | **Certificate Type** | Extended Validation (EV) SSL |
 | **Issuer** | DigiCert SHA2 Extended Validation Server CA |
@@ -36,7 +36,7 @@ Fast reference guide for SSL certificate setup on MQL5 VPS Jakarta 01 (ID: 67593
 
 ```powershell
 # If on VPS
-.\ssl-certificates\scripts\deploy-to-vps.ps1 -VpsId 675930
+.\ssl-certificates\scripts\deploy-to-vps.ps1 -VpsId 6773048
 ```
 
 ### 4. Verify HTTPS

@@ -78,13 +78,13 @@ if (Test-Path $mt5DataBasePath) {
         Write-Host "    [INFO] MT5 Data Directory not found (normal if terminal hasn't been launched)" -ForegroundColor Cyan
         Write-Host "    [INFO] Will create directory structure after terminal launch" -ForegroundColor Cyan
         # Use default path
-        $mt5DataDir = Join-Path $mt5DataBasePath "53785E099C927DB68A545C249CDBCE06"
+        $mt5DataDir = Join-Path $mt5DataBasePath "59B5EF658331A93A0C9B2C215C575F68"
         $eaTargetPath = Join-Path $mt5DataDir "MQL5\Experts\Advisors"
     }
 }
 else {
     Write-Host "    [INFO] MT5 base directory not found, will create after terminal launch" -ForegroundColor Cyan
-    $mt5DataDir = Join-Path $mt5DataBasePath "53785E099C927DB68A545C249CDBCE06"
+    $mt5DataDir = Join-Path $mt5DataBasePath "59B5EF658331A93A0C9B2C215C575F68"
     $eaTargetPath = Join-Path $mt5DataDir "MQL5\Experts\Advisors"
 }
 

@@ -1,6 +1,6 @@
 # SSL Certificate Setup Summary
 
-Complete SSL certificate infrastructure has been set up for secure HTTPS web hosting on your MQL5 VPS Jakarta 01 (ID: 675930).
+Complete SSL certificate infrastructure has been set up for secure HTTPS web hosting on your MQL5 VPS Jakarta 01 (ID: 6773048).
 
 ## What Was Created
 
@@ -121,7 +121,7 @@ This configures:
 If you're already on the VPS:
 
 ```powershell
-.\ssl-certificates\scripts\deploy-to-vps.ps1 -VpsId 675930
+.\ssl-certificates\scripts\deploy-to-vps.ps1 -VpsId 6773048
 ```
 
 This will:
@@ -259,7 +259,7 @@ The following existing files have been updated:
 .\ssl-certificates\scripts\configure-webserver.ps1 -WebServer "IIS"
 
 # Deploy to VPS
-.\ssl-certificates\scripts\deploy-to-vps.ps1 -VpsId 675930
+.\ssl-certificates\scripts\deploy-to-vps.ps1 -VpsId 6773048
 
 # Check certificate
 Get-ChildItem Cert:\LocalMachine\My | Where-Object { $_.Subject -like "*stripecdn.com*" }
@@ -402,6 +402,6 @@ You can now securely host your ZOLO-A6-9VxNUNA trading system website with HTTPS
 ---
 
 **Setup Date**: 2026-01-04  
-**VPS ID**: 675930 (MQL5 VPS Jakarta 01)  
+**VPS ID**: 6773048 (MQL5 VPS Jakarta 01)
 **Certificate Expiry**: February 19, 2026  
 **Documentation Version**: 1.0

@@ -12,7 +12,7 @@ Write-Host ""
 
 # MT5 Terminal Path (from memory)
 $mt5TerminalPath = "C:\Users\$env:USERNAME\AppData\Roaming\MetaQuotes\Terminal"
-$mt5TerminalID = "53785E099C927DB68A545C249CDBCE06"
+$mt5TerminalID = "59B5EF658331A93A0C9B2C215C575F68"
 $mt5FullPath = Join-Path $mt5TerminalPath $mt5TerminalID
 $mql5Path = Join-Path $mt5FullPath "MQL5"
 $sharedProjectsPath = Join-Path $mql5Path "Shared Projects"

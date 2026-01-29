@@ -99,7 +99,7 @@ Write-Host "  4. Start the Python trading bridge service" -ForegroundColor White
 Write-Host "  5. Verify connection on port 5500" -ForegroundColor White
 Write-Host ""
 Write-Host "MQL5 EA Location:" -ForegroundColor Cyan
-Write-Host "  C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\53785E099C927DB68A545C249CDBCE06\MQL5\Experts\" -ForegroundColor White
+Write-Host "  C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\59B5EF658331A93A0C9B2C215C575F68\MQL5\Experts\" -ForegroundColor White
 Write-Host ""
 Write-Host "Script execution completed." -ForegroundColor Green
 

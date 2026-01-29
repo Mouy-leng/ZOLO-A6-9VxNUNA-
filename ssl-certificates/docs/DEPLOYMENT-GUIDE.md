@@ -1,6 +1,6 @@
 # SSL Certificate Deployment Guide for MQL5 VPS
 
-Complete guide for deploying SSL certificates to MQL5 VPS Jakarta 01 (ID: 675930) for secure web hosting.
+Complete guide for deploying SSL certificates to MQL5 VPS Jakarta 01 (ID: 6773048) for secure web hosting.
 
 ## Table of Contents
 
@@ -24,7 +24,7 @@ Complete guide for deploying SSL certificates to MQL5 VPS Jakarta 01 (ID: 675930
 - Full chain (fullchain.pem) - optional but recommended
 
 ✅ **VPS Access**
-- MQL5 VPS ID: 675930
+- MQL5 VPS ID: 6773048
 - RDP/SSH access credentials
 - Administrator privileges
 
@@ -38,7 +38,7 @@ Complete guide for deploying SSL certificates to MQL5 VPS Jakarta 01 (ID: 675930
 
 | Item | Details |
 |------|---------|
-| **VPS ID** | 675930 |
+| **VPS ID** | 6773048 |
 | **Location** | MQL5 VPS Jakarta 01 |
 | **OS** | Windows Server (or Windows 10/11) |
 | **Purpose** | Web hosting for ZOLO-A6-9VxNUNA |
@@ -578,5 +578,5 @@ try {
 
 **Document Version**: 1.0  
 **Last Updated**: 2026-01-04  
-**VPS ID**: 675930  
+**VPS ID**: 6773048
 **Certificate Expiry**: February 19, 2026

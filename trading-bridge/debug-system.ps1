@@ -93,7 +93,7 @@ Write-Host ""
 
 # Check MT5 EA files
 Write-Host "[4/5] Checking MT5 EA files..." -ForegroundColor Yellow
-$mt5Path = "C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\53785E099C927DB68A545C249CDBCE06\MQL5"
+$mt5Path = "C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\59B5EF658331A93A0C9B2C215C575F68\MQL5"
 $eaFile = Join-Path $mt5Path "Experts\PythonBridgeEA.mq5"
 $includeFile = Join-Path $mt5Path "Include\PythonBridge.mqh"
 

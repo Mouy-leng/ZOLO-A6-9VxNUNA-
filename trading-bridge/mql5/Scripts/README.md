@@ -24,7 +24,7 @@ This script performs the following checks:
 
 1. **Copy to MT5 Scripts Directory**:
    ```
-   C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\53785E099C927DB68A545C249CDBCE06\MQL5\Scripts\
+   C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\59B5EF658331A93A0C9B2C215C575F68\MQL5\Scripts\
    ```
 
 2. **Compile the Script**:

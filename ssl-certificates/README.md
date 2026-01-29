@@ -5,7 +5,7 @@ This directory contains SSL certificate configuration and deployment scripts for
 ## Overview
 
 **VPS Details:**
-- **VPS ID**: 675930
+- **VPS ID**: 6773048
 - **Location**: MQL5 VPS Jakarta 01
 - **Purpose**: Secure web hosting for trading system
 
@@ -67,8 +67,8 @@ ssl-certificates/certs/
 ### 4. Deploy to MQL5 VPS
 
 ```powershell
-# Deploy to VPS ID: 675930
-.\scripts\deploy-to-vps.ps1 -VpsId 675930
+# Deploy to VPS ID: 6773048
+.\scripts\deploy-to-vps.ps1 -VpsId 6773048
 ```
 
 ## Security Notes
@@ -210,5 +210,5 @@ For issues:
 ---
 
 **Created**: 2026-01-04  
-**VPS ID**: 675930  
+**VPS ID**: 6773048
 **Certificate Expiry**: February 19, 2026

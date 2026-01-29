@@ -1,12 +1,12 @@
-# How to Connect Your MetaTrader 5 Terminal to an MQL5 VPS
+# How to Connect Your EXNESS MetaTrader 5 Terminal to Your MQL5 VPS
 
-This guide provides the standard, correct procedure for connecting your MetaTrader 5 (MT5) terminal to your MQL5 Virtual Hosting service. This process is called **migration** and is performed entirely within the MT5 terminal's graphical user interface (GUI).
+This guide provides the standard, correct procedure for connecting your EXNESS MetaTrader 5 (MT5) terminal, installed on a Windows VPS, to your MQL5 Virtual Hosting service. This process is called **migration** and is performed entirely within the MT5 terminal's graphical user interface (GUI).
 
 **There is no need for any external scripts.** The following steps will synchronize your local trading environment (accounts, charts, indicators, and Expert Advisors) to the MQL5 virtual server, allowing it to run 24/7.
 
 ## Prerequisites
 
-Before you begin, please ensure the following are set up on your **local computer** (not the VPS):
+Before you begin, please ensure the following are set up on your **Windows VPS**:
 
 1.  **Exness MetaTrader 5 Terminal:** You must have the Exness MT5 terminal installed.
 2.  **Trading Account:** You must be logged into your Exness trading account within the terminal.
@@ -26,7 +26,7 @@ Before you begin, please ensure the following are set up on your **local compute
 
 4.  **Follow the Virtual Hosting Wizard:**
     *   The "Virtual Hosting Wizard" will open. This wizard will guide you through the process.
-    *   It will automatically detect your MQL5 account and your active VPS subscription.
+    *   It will automatically detect your MQL5 account (`lengkundee`) and your active VPS subscription.
     *   You will be prompted to choose the type of migration. Select **"Migrate trading environment: charts, indicators, Expert Advisors, and settings"**.
 
 5.  **Confirm and Start the Migration:**

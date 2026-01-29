@@ -33,45 +33,41 @@ This system provides:
 
 ## Quick Start
 
-### 1. Setup Directory Structure
-
-```powershell
-.\setup-trading-drive.ps1
-```
-
-### 2. Install Python Dependencies
+### 1. Install Python Dependencies
 
 ```powershell
 cd trading-bridge
 pip install -r requirements.txt
 ```
 
+### 2. Configure MetaTrader 5
+
+Ensure port 5500 is open in your firewall (requires Admin):
+```powershell
+.\setup-firewall-port-5500.ps1
+```
+
 ### 3. Configure Brokers
 
-Copy `config/brokers.json.example` to `config/brokers.json` and configure your broker API keys.
-
-**IMPORTANT**: `brokers.json` is gitignored - never commit it!
+Copy `config/brokers.json.example` (if available) to `config/brokers.json` or use the automated setup tools.
+**IMPORTANT**: `config/brokers.json` is gitignored - never commit it!
 
 ### 4. Configure Symbols
 
-Copy `config/symbols.json.example` to `config/symbols.json` and configure your trading symbols.
+Edit `config/symbols.json` to configure your trading symbols.
 
 ### 5. Security Check
 
+Run the system-wide security check from the root:
 ```powershell
-.\security-check-trading.ps1
+..\security-check.ps1
 ```
 
 ### 6. Start System
 
+Launch the trading bridge and background service:
 ```powershell
-.\start-trading-system-admin.ps1
-```
-
-### 7. Setup Auto-Start (Optional)
-
-```powershell
-.\setup-trading-auto-start.ps1
+.\start-trading-system.ps1
 ```
 
 ## Directory Structure
@@ -85,7 +81,7 @@ trading-bridge/
 │   ├── trader/          # Multi-symbol trader
 │   ├── services/        # Background services
 │   └── security/        # Credential management
-├── mql5/                # MQL5 Workspace (see mql5/README.md)
+├── mql5/                # MQL5 Workspace (EAs and Includes)
 │   ├── Experts/         # MQL5 Expert Advisors
 │   └── Include/         # MQL5 includes
 ├── config/              # Configuration (gitignored)
@@ -132,7 +128,7 @@ See `SECURITY.md` for security best practices.
 
 ## Logs
 
-All logs are in `trading-bridge/logs/`:
+All logs are in `trading-bridge/logs/` (created automatically on first run):
 - `mql5_bridge_YYYYMMDD.log` - Bridge communication
 - `trading_service_YYYYMMDD.log` - Service operations
 - `orchestrator_YYYYMMDD.log` - Orchestrator monitoring
@@ -140,8 +136,6 @@ All logs are in `trading-bridge/logs/`:
 ## Support
 
 For issues or questions:
-1. Check log files
-2. Run security check: `.\security-check-trading.ps1`
-3. Verify configuration files
-4. Check service status
-
+1. Check log files in the `logs/` directory
+2. Run status check: `.\check-status.ps1`
+3. Verify EA setup: `.\verify-ea-setup.ps1`

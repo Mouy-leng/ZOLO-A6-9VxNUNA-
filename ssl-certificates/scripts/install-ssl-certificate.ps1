@@ -55,7 +55,7 @@ function Write-StatusWarning { param($msg) Write-Host "[WARNING] $msg" -Foregrou
 function Write-StatusError { param($msg) Write-Host "[ERROR] $msg" -ForegroundColor Red }
 
 Write-Host "`n=== SSL Certificate Installation for ZOLO-A6-9VxNUNA ===" -ForegroundColor Cyan
-Write-Host "VPS ID: 675930 (MQL5 VPS Jakarta 01)" -ForegroundColor Cyan
+Write-Host "VPS ID: 6773048 (MQL5 VPS Jakarta 01)" -ForegroundColor Cyan
 Write-Host "Web Server: $WebServer" -ForegroundColor Cyan
 Write-Host "Certificate: $CertPath`n" -ForegroundColor Cyan
 

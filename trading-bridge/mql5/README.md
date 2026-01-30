@@ -3,8 +3,8 @@
 MQL5 Algo Forge / [LengKundee](https://www.mql5.com/en/users/LengKundee)
 
 ## Paths
-- Terminal data: `C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\53785E099C927DB68A545C249CDBCE06\MQL5`
-  > **Note**: The terminal hash `53785E099C927DB68A545C249CDBCE06` is specific to this installation. To find your terminal hash, navigate to `%APPDATA%\MetaQuotes\Terminal\` and look for the folder containing your MT5 data.
+- Terminal data: `C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\59B5EF658331A93A0C9B2C215C575F68\MQL5`
+  > **Note**: The terminal hash `59B5EF658331A93A0C9B2C215C575F68` is specific to this installation. To find your terminal hash, navigate to `%APPDATA%\MetaQuotes\Terminal\` and look for the folder containing your MT5 data.
 - Experts: `MQL5\Experts\Advisors`
 - Profiles: `MQL5\Profiles` (charts/templates)
 - Logs: `MQL5\Logs`

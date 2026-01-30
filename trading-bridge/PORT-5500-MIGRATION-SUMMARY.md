@@ -179,7 +179,7 @@ python verify-exness-setup.py
 3. **Copy AccountSetup Script to MT5**:
    ```
    Source: trading-bridge/mql5/Scripts/AccountSetup_279410452.mq5
-   Destination: C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\53785E099C927DB68A545C249CDBCE06\MQL5\Scripts\
+   Destination: C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\59B5EF658331A93A0C9B2C215C575F68\MQL5\Scripts\
    ```
 
 4. **Run AccountSetup Script in MT5**:

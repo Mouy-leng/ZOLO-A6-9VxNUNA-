@@ -77,7 +77,7 @@ MetaEditor should already be open. If not:
 
 ### Step 2: Compile Enhanced EAs
 1. Press **Ctrl+O** to open file
-2. Navigate to: `C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\53785E099C927DB68A545C249CDBCE06\MQL5\Experts\Advisors`
+2. Navigate to: `C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\59B5EF658331A93A0C9B2C215C575F68\MQL5\Experts\Advisors`
 3. Open each Enhanced EA:
    - `ExpertMACD_Enhanced.mq5`
    - `ExpertMAMA_Enhanced.mq5`
@@ -199,7 +199,7 @@ All setup files are located in:
   - `compile-mql5-eas.ps1` - Compilation script
 
 Expert Advisors are located in:
-- `C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\53785E099C927DB68A545C249CDBCE06\MQL5\Experts\Advisors\`
+- `C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\59B5EF658331A93A0C9B2C215C575F68\MQL5\Experts\Advisors\`
 
 ---
 

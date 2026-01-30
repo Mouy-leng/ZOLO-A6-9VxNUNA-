@@ -6,12 +6,12 @@ The PythonBridgeEA has been copied to your MT5 terminal directory:
 
 **Expert Advisor:**
 ```
-C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\53785E099C927DB68A545C249CDBCE06\MQL5\Experts\PythonBridgeEA.mq5
+C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\59B5EF658331A93A0C9B2C215C575F68\MQL5\Experts\PythonBridgeEA.mq5
 ```
 
 **Include File:**
 ```
-C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\53785E099C927DB68A545C249CDBCE06\MQL5\Include\PythonBridge.mqh
+C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\59B5EF658331A93A0C9B2C215C575F68\MQL5\Include\PythonBridge.mqh
 ```
 
 ## 🔧 Configuration Summary

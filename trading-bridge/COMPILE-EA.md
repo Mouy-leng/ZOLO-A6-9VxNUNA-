@@ -10,7 +10,7 @@
    - Navigate to: `MQL5\Experts\PythonBridgeEA.mq5`
    - Or press Ctrl+O and browse to:
      ```
-     C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\53785E099C927DB68A545C249CDBCE06\MQL5\Experts\PythonBridgeEA.mq5
+     C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\59B5EF658331A93A0C9B2C215C575F68\MQL5\Experts\PythonBridgeEA.mq5
      ```
 
 3. **Compile**
@@ -30,7 +30,7 @@
 ### Error: Cannot find PythonBridge.mqh
 **Solution**: Verify the include file exists:
 ```
-C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\53785E099C927DB68A545C249CDBCE06\MQL5\Include\PythonBridge.mqh
+C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\59B5EF658331A93A0C9B2C215C575F68\MQL5\Include\PythonBridge.mqh
 ```
 
 ### Error: ZeroMQ library not found

@@ -205,7 +205,7 @@ After running the setup, configuration files will be created in:
 
 - The device setup script requires Administrator privileges
 - MT5 must be installed before running the MT5 integration script
-- The EA project should be located at: `C:\Users\[USERNAME]\AppData\Roaming\MetaQuotes\Terminal\53785E099C927DB68A545C249CDBCE06\MQL5\Shared Projects\EXNESS_GenX_Trading`
+- The EA project should be located at: `C:\Users\[USERNAME]\AppData\Roaming\MetaQuotes\Terminal\59B5EF658331A93A0C9B2C215C575F68\MQL5\Shared Projects\EXNESS_GenX_Trading`
 - All personal files are excluded via `.gitignore`
 - All sensitive data (tokens, credentials) are gitignored
 - Complete device skeleton structure is documented

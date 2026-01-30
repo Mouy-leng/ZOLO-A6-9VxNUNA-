@@ -239,7 +239,7 @@ Available certificate formats:
 
 ## Usage for VPS
 
-For MQL5 VPS Jakarta 01 (ID: 675930):
+For MQL5 VPS Jakarta 01 (ID: 6773048):
 
 1. Convert certificate to Windows-compatible format
 2. Import to Windows Certificate Store

@@ -16,8 +16,8 @@ Write-Host ""
 # Configuration
 $mt5TerminalPath = "C:\Program Files\MetaTrader 5 EXNESS\terminal64.exe"
 $mt5MetaEditorPath = "C:\Program Files\MetaTrader 5 EXNESS\metaeditor64.exe"
-$expertsPath = "C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\53785E099C927DB68A545C249CDBCE06\MQL5\Experts\Advisors"
-$compiledPath = "C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\53785E099C927DB68A545C249CDBCE06\MQL5\Experts\Advisors"
+$expertsPath = "C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\59B5EF658331A93A0C9B2C215C575F68\MQL5\Experts\Advisors"
+$compiledPath = "C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\59B5EF658331A93A0C9B2C215C575F68\MQL5\Experts\Advisors"
 
 # Check if MetaEditor exists
 $metaEditorFound = $false

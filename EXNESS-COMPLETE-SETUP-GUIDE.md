@@ -204,7 +204,7 @@ Ask Line: RGB(0, 150, 255)
 
 **EA Directory:**
 ```
-C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\53785E099C927DB68A545C249CDBCE06\MQL5\Experts\Advisors
+C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\59B5EF658331A93A0C9B2C215C575F68\MQL5\Experts\Advisors
 ```
 
 **MQL5 Repository:**
@@ -217,7 +217,7 @@ C:\Users\USER\OneDrive\mql5-repo\Experts\Advisors
 **Option A: Manual Copy**
 1. Navigate to MQL5 repository: `C:\Users\USER\OneDrive\mql5-repo\Experts\Advisors`
 2. Copy desired EA files (`.mq5` files)
-3. Paste to: `C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\53785E099C927DB68A545C249CDBCE06\MQL5\Experts\Advisors`
+3. Paste to: `C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\59B5EF658331A93A0C9B2C215C575F68\MQL5\Experts\Advisors`
 
 **Option B: Using PowerShell Script**
 ```powershell
@@ -649,7 +649,7 @@ C:\Program Files\MetaTrader 5 EXNESS\metaeditor64.exe
 
 **EA Directory:**
 ```
-C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\53785E099C927DB68A545C249CDBCE06\MQL5\Experts\Advisors
+C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\59B5EF658331A93A0C9B2C215C575F68\MQL5\Experts\Advisors
 ```
 
 **MQL5 Repository:**

@@ -18,7 +18,7 @@ Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
 
 # Configuration
-$expertsPath = "C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\53785E099C927DB68A545C249CDBCE06\MQL5\Experts\Advisors"
+$expertsPath = "C:\Users\USER\AppData\Roaming\MetaQuotes\Terminal\59B5EF658331A93A0C9B2C215C575F68\MQL5\Experts\Advisors"
 
 # Analysis Results
 $analysisResults = @()

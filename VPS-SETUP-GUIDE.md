@@ -341,7 +341,7 @@ This configures:
 
 ```powershell
 # If running on the VPS
-.\ssl-certificates\scripts\deploy-to-vps.ps1 -VpsId 675930
+.\ssl-certificates\scripts\deploy-to-vps.ps1 -VpsId 6773048
 ```
 
 ### Verification
@@ -449,5 +449,5 @@ For issues or questions:
 **Updated**: 2026-01-04 (Added SSL Certificate Support)  
 **System**: NuNa (Windows 11 Home Single Language 25H2)  
 **VPS**: 24/7 Trading System  
-**VPS ID**: 675930 (MQL5 VPS Jakarta 01)  
+**VPS ID**: 6773048 (MQL5 VPS Jakarta 01)
 **SSL Certificate**: DigiCert EV (Expires: Feb 19, 2026)

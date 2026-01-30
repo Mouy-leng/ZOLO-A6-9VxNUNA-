@@ -12,31 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /**
- * Utility: Debounce function
- */
-function debounce(func, wait = 100) {
-    let timeout;
-    return function(...args) {
-        clearTimeout(timeout);
-        timeout = setTimeout(() => func.apply(this, args), wait);
-    };
-}
-
-/**
- * Utility: Throttle function
- */
-function throttle(func, limit = 100) {
-    let inThrottle;
-    return function(...args) {
-        if (!inThrottle) {
-            func.apply(this, args);
-            inThrottle = true;
-            setTimeout(() => inThrottle = false, limit);
-        }
-    };
-}
-
-/**
  * Navigation functionality
  */
 function initNavigation() {
@@ -88,22 +63,37 @@ function initNavigation() {
  */
 function initScrollEffects() {
     const navbar = document.querySelector('.navbar');
+    if (!navbar) return;
 
-    // Performance: Throttle scroll events to prevent excessive function calls.
-    // Toggling a class is more performant than changing styles directly,
-    // as it allows the browser to optimize rendering.
-    const handleScroll = () => {
-        const currentScroll = window.pageYOffset;
-        
-        // Add/remove .scrolled class based on scroll position
-        if (currentScroll > 50) {
+    // ⚡ Bolt Optimization: Use IntersectionObserver instead of scroll event listener.
+    // This removes the need to poll scroll position on the main thread,
+    // reducing layout thrashing and improving scrolling performance.
+
+    // Create a sentinel element to trigger the observer
+    const sentinel = document.createElement('div');
+    sentinel.style.position = 'absolute';
+    sentinel.style.top = '50px'; // Trigger point matching the original 50px threshold
+    sentinel.style.left = '0';
+    sentinel.style.width = '100%';
+    sentinel.style.height = '1px';
+    sentinel.style.pointerEvents = 'none';
+    sentinel.style.visibility = 'hidden';
+    // Ensure sentinel doesn't cause scrollbar
+    sentinel.style.overflow = 'hidden';
+    document.body.appendChild(sentinel);
+
+    const observer = new IntersectionObserver((entries) => {
+        const entry = entries[0];
+        // If the sentinel is not intersecting and is above the viewport,
+        // it means we have scrolled past the trigger point.
+        if (!entry.isIntersecting && entry.boundingClientRect.top < 0) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
         }
-    };
+    });
 
-    window.addEventListener('scroll', throttle(handleScroll, 100));
+    observer.observe(sentinel);
 }
 
 /**
@@ -176,24 +166,6 @@ function initCopyButtons() {
     copyButtons.forEach(btn => {
         btn.addEventListener('click', () => copyCode(btn));
     });
-}
-
-/**
- * Terminal typing effect (optional enhancement)
- */
-function typeWriter(element, text, speed = 50) {
-    let i = 0;
-    element.textContent = '';
-    
-    function type() {
-        if (i < text.length) {
-            element.textContent += text.charAt(i);
-            i++;
-            setTimeout(type, speed);
-        }
-    }
-    
-    type();
 }
 
 // Console branding

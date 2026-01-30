@@ -163,10 +163,14 @@ function initCopyButtons() {
             const originalHTML = btn.innerHTML;
             btn.innerHTML = `<svg width="16" height="16"><use href="#check"></use></svg>`;
             btn.style.color = 'var(--primary)';
+            btn.setAttribute('data-tooltip', 'Copied!');
+            btn.setAttribute('aria-label', 'Copied to clipboard');
 
             setTimeout(() => {
                 btn.innerHTML = originalHTML;
                 btn.style.color = '';
+                btn.setAttribute('data-tooltip', 'Copy to clipboard');
+                btn.setAttribute('aria-label', 'Copy to clipboard');
             }, 2000);
         }).catch(err => {
             console.error('Failed to copy:', err);

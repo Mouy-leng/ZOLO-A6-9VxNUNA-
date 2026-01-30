@@ -82,14 +82,7 @@ echo -e "${GREEN}   Server Running!${NC}"
 echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
 echo -e "${YELLOW}   Local URL:${NC}     http://localhost:$PORT/"
-
-# Try to get network IP
-set +e
-NETWORK_IP=$(hostname -I 2>/dev/null | awk '{print $1}')
-set -e
-if [ -n "$NETWORK_IP" ]; then
-    echo -e "${YELLOW}   Network URL:${NC}  http://$NETWORK_IP:$PORT/"
-fi
+echo -e "${YELLOW}   Network:${NC}       Disabled (Security Restriction)"
 echo ""
 echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
@@ -103,8 +96,8 @@ echo ""
 echo -e "${YELLOW}Press Ctrl+C to stop the server${NC}"
 echo ""
 
-# Start the server
-$PYTHON_CMD -m http.server $PORT
+# Start the server (Secure Mode)
+$PYTHON_CMD scripts/secure_server.py $PORT
 
 echo ""
 echo -e "${GREEN}✅ Server stopped${NC}"

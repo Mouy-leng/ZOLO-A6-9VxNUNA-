@@ -121,20 +121,8 @@ Write-ColorOutput "━━━━━━━━━━━━━━━━━━━━�
 Write-Host ""
 Write-ColorOutput "   Local URL:     " "Yellow" -NoNewline
 Write-Host "http://localhost:$Port/"
-
-# Try to get local IP (with error handling)
-try {
-    $localIP = (Get-NetIPAddress -AddressFamily IPv4 -PrefixOrigin Manual,Dhcp -ErrorAction SilentlyContinue |
-                Where-Object { $_.IPAddress -notlike "169.254.*" -and $_.IPAddress -ne "127.0.0.1" } |
-                Select-Object -First 1).IPAddress
-    if ($localIP) {
-        Write-ColorOutput "   Network URL:   " "Yellow" -NoNewline
-        Write-Host "http://$localIP:$Port/"
-    }
-} catch {
-    # Network IP detection failed - inform user but continue
-    Write-ColorOutput "   ⚠️  Unable to detect network IP address" "DarkYellow"
-}
+Write-ColorOutput "   Network:       " "Yellow" -NoNewline
+Write-Host "Disabled (Security Restriction)"
 
 Write-Host ""
 Write-ColorOutput "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" "Cyan"
@@ -149,9 +137,9 @@ Write-Host ""
 Write-ColorOutput "Press Ctrl+C to stop the server" "Yellow"
 Write-Host ""
 
-# Start the server
+# Start the server (Secure Mode)
 try {
-    & $pythonCmd -m http.server $Port
+    & $pythonCmd scripts/secure_server.py $Port
 } catch {
     Write-ColorOutput "❌ Failed to start server: $_" "Red"
     Read-Host "Press Enter to exit"

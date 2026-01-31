@@ -16,7 +16,13 @@ For a complete overview, open and read the `INSTRUCTIONS.md` file. It contains a
 
 [**Click here to view INSTRUCTIONS.md**](./INSTRUCTIONS.md)
 
-### 2. Run the Interactive PowerShell Script (For Windows VPS)
+### 2. Personalized Guide for LengKundee (NEW)
+
+If you are **LengKundee**, please follow the personalized connection guide:
+
+[**Click here to view MQL5_CONNECTION_GUIDE.md**](./MQL5_CONNECTION_GUIDE.md)
+
+### 3. Run the Interactive PowerShell Script (For Windows VPS)
 
 If you are on your Windows VPS, you can use the interactive PowerShell script for a guided walkthrough.
 
@@ -24,6 +30,9 @@ If you are on your Windows VPS, you can use the interactive PowerShell script fo
 2.  Select **"Run with PowerShell"**.
 
 The script will display the instructions one section at a time.
+
+For a more personalized setup, you can also run:
+`Shared Projects/EXNESS_GenX_Trading/DEPLOY/setup_lengkundee_mql5.ps1`
 
 ---
 

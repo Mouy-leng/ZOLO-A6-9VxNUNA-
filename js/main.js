@@ -109,8 +109,14 @@ function initAnimations() {
     // This ensures that animations are processed only when the browser is ready
     // to paint a new frame, preventing jank and improving smoothness.
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
+        entries.forEach((entry, i) => {
             if (entry.isIntersecting) {
+                // ⚡ Bolt Optimization: Dynamic Staggering
+                // Assign animation order based on the index in the current intersection batch (i).
+                // This ensures elements appearing together stagger nicely, but prevents
+                // large delays for elements further down the page (which was caused by using global index).
+                entry.target.style.setProperty('--animation-order', i);
+
                 requestAnimationFrame(() => {
                     entry.target.classList.add('animate-in');
                 });
@@ -124,15 +130,11 @@ function initAnimations() {
         '.feature-card, .system-card, .doc-card, .step, .arch-layer'
     );
     
-    animateElements.forEach((el, index) => {
+    animateElements.forEach((el) => {
         // ⚡ Bolt Optimization: Use a class to set initial animation state.
         // This is more performant than setting inline styles directly, as it
         // avoids triggering unnecessary style recalculations by the browser.
         el.classList.add('animation-prepare');
-        // ⚡ Bolt Optimization: Set a CSS custom property for the animation order.
-        // This is more performant than setting `transitionDelay` directly, as it
-        // offloads the animation timing to the CSS rendering engine.
-        el.style.setProperty('--animation-order', index);
         observer.observe(el);
     });
     

@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollEffects();
     initAnimations();
     initCopyButtons();
+    initBackToTop();
 });
 
 /**
@@ -169,6 +170,43 @@ function initCopyButtons() {
 
     copyButtons.forEach(btn => {
         btn.addEventListener('click', () => copyCode(btn));
+    });
+}
+
+/**
+ * Back to top functionality
+ */
+function initBackToTop() {
+    const backToTopBtn = document.querySelector('.back-to-top');
+    if (!backToTopBtn) return;
+
+    // Show button when scrolled down
+    const toggleBackToTop = () => {
+        if (window.scrollY > 500) {
+            backToTopBtn.classList.add('visible');
+        } else {
+            backToTopBtn.classList.remove('visible');
+        }
+    };
+
+    // Throttled scroll listener
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                toggleBackToTop();
+                ticking = false;
+            });
+            ticking = true;
+        }
+    });
+
+    // Smooth scroll to top
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     });
 }
 

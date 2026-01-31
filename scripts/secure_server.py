@@ -16,6 +16,18 @@ class SecureHandler(http.server.SimpleHTTPRequestHandler):
                  self.send_error(403, "Access Denied: Hidden files are protected")
                  return
 
+        # Block sensitive file types
+        sensitive_extensions = ('.ps1', '.bat', '.cmd', '.sh', '.py', '.md', '.config', '.env')
+        if clean_path.lower().endswith(sensitive_extensions):
+             self.send_error(403, "Access Denied: File type not allowed")
+             return
+
+        # Block specific sensitive files
+        sensitive_files = ('package.json', 'package-lock.json', 'pnpm-lock.yaml', 'yarn.lock')
+        if os.path.basename(clean_path).lower() in sensitive_files:
+             self.send_error(403, "Access Denied: Sensitive file")
+             return
+
         super().do_GET()
 
 if __name__ == "__main__":

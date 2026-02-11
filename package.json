@@ -1,0 +1,23 @@
+{
+  "name": "@mouy-leng/zolo-a6-9vxnuna",
+  "version": "1.0.0",
+  "description": "A Node.js package for ZOLO-A6-9VxNUNA-",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mouy-leng/ZOLO-A6-9VxNUNA-.git"
+  },
+  "keywords": [],
+  "author": "Mouy-leng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mouy-leng/ZOLO-A6-9VxNUNA-/issues"
+  },
+  "homepage": "https://github.com/Mouy-leng/ZOLO-A6-9VxNUNA-#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}

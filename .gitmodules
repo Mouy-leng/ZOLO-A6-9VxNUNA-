@@ -1,0 +1,9 @@
+[submodule "a333-repo"]
+	path = a333-repo
+	url = https://github.com/Mouy-leng/A6-9V
+[submodule "mql5-repo"]
+	path = mql5-repo
+	url = https://github.com/Mouy-leng/MQL5
+[submodule "nuna-repo"]
+	path = nuna-repo
+	url = https://github.com/Mouy-leng/MQL5-NUNA
